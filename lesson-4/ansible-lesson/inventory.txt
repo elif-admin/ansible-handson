@@ -1,0 +1,4 @@
+[servers]
+db_server ansible_host=172.31.86.28 ansible_ssh_private_key_file=/home/ubuntu/first-key.pem ansible_user=ubuntu
+web_server ansible_host=172.31.95.200 ansible_ssh_private_key_file=/home/ubuntu/first-key.pem ansible_user=ubuntu
+node3 ansible_host=172.31.90.53 ansible_ssh_private_key_file=/home/ubuntu/first-key.pem ansible_user=ec2-user

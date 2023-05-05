@@ -1,0 +1,21 @@
+---
+- name: Copy for linux
+  hosts: webservers
+  vars:
+    key: value
+  tasks:
+   - name: test value
+     ansible.builtin.shell:
+      cmd: echo {{ key }}
+
+   - name: Copy your file to the webservers
+     ansible.builtin.copy:
+       src: /home/ec2-user/yourfile
+       dest: /home/ec2-user/bestfile
+     notify:
+      - Copy
+
+
+  handlers:
+    - name: Copy
+      ansible.builtin.shell: "cp /home/ec2-user/bestfile /mnt/testfile"

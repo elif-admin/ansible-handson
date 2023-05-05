@@ -1,0 +1,13 @@
+ansible-3-lesson
+
+1- hashlemek icin hangi komut :filters the manipulate data
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_filters.html
+
+2- dynamic inventory
+https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html
+
+3- hayvanlarin kafasinda baloncuk seklinde mesaj yazdirmak icin ansible in dokumantasyonundaki komutu nasil bulurum
+ansible-config list | grep cow
+bu komutla cow_selection i bulurum ve bunu ansible.cfg dosyasina yazarim
+cow_selection=random seklinde ekledim
+playbook yaml dosyasini tekrar calistirinca hayvan resimlerini gorurum.

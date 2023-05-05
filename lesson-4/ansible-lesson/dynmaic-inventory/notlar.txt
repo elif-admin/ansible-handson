@@ -1,0 +1,18 @@
+
+4- dynamic inventory olusturmak icin:
+ pyhton pip yukle: pip -v ile kontrol et
+sudo apt install python3-pip
+
+boto3  ve botocore yukle: pip install --user boto3 botocore
+
+ansible.cfg nin icine keypem imi ekliyorum.nasi ekleyecegimi hangi komutla bulurum
+ansible-config list | grep -i private bu komutla
+
+PRIVATE_KEY_FILE = first-key.pem
+ 
+control noda a aws fullaccess yetkisi atamayi unutma.
+
+db servera ping atalim
+ ansible _db_server_cw_user -i demo_aws_ec2.yml -m ping -o
+ 
+inventory yaml dosyam : demo_aws_ec2.yml

@@ -1,0 +1,3 @@
+1- role olusturup apache yi web_server_1 e yukledik.apache versiyonu browserdan nasi kontrol ederiz.ad hoc komutuyla
+
+ansible web_server_1 -m shell -a "httpd -v"

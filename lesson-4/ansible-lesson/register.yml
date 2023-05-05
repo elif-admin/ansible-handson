@@ -1,0 +1,7 @@
+- name: run the db server
+  hosts: db_server
+  tasks:
+    - shell: "ls -a"
+      register: abc
+    - debug:
+        msg: "db serverda su dosyalar bulunuyor: {{ abc }}"

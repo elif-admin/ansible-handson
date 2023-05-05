@@ -1,0 +1,22 @@
+1-
+ec2 larimiza yukledigimiz sistem dosyalarini kontrol etmek icin 
+ansible db_server -a "mysql --version" 
+komutunu kullaniriz
+
+2- copy moduluyle ec2 ya kopyaladigimiz dosyayi kontrol edelim
+ansible db_server -m shell -a "pwd : ls"
+
+3- nohup : terminalin disinda calis, nohup & bu ikisi calisir.istedigim komutu arka planda calistir,terminali bize
+birakir.
+nohup python3 phonebook-app.py &
+
+4- dynamic inventory olusturmak icin:
+ pyhton pip yukle: pip -v ile kontrol et
+sudo apt install python3-pip
+
+boto3  ve botocore yukle: pip install --user boto3 botocore
+
+ansible.cfg nin icine keypem imi ekliyorum.nasi ekleyecegimi hangi komutla bulurum
+ansible-config list | grep -i private bu komutla
+
+PRIVATE_KEY_FILE = first-key.pem
